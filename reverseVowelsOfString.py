@@ -11,12 +11,10 @@ class Solution:
 
         return s
 
-s=Solution()
-re=s.reverseVowels("Stringooppuiooek")
+
+s = Solution()
+re = s.reverseVowels('Stringooppuiooek')
 print(re)
 
 
-
-#complixity O(2n)=O(n)
-
-
+# complixity O(2n)=O(n)

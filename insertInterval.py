@@ -29,7 +29,6 @@ class Solution:
                 newIntervals.append(interval)
         return newIntervals
 
-
     +++++++++++++++++++++++++++++++++++
 
     class Solution:

@@ -3,8 +3,8 @@ class Solution:
         length = len(height)
         allpairs = []
         value = 0
-        left =0
-        right = length -1
+        left = 0
+        right = length - 1
         for i in range(length):
             if height[left] > height[right]:
                 value = (right - left) * height[right]

@@ -3,7 +3,6 @@
 # A subsequence of a string is a new string that is formed from the original string by deleting
 # some (can be none) of the characters without disturbing the relative
 # positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
-
 # idea  Two pointers traverse each string then deleting (replacing the not in the orignal str) then Find if it there's or not
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
@@ -17,14 +16,14 @@ class Solution:
                 i = i + 1
                 j = j + 1
             else:
-                t = t.replace(t[i], "", 1)
+                t = t.replace(t[i], '', 1)
         if t.find(s) == -1:
             return False
         else:
             return True
 
 
-s=Solution()
-bool=s.isSubsequence("ahmad","achmkakuddpppo") #true
+s = Solution()
+bool = s.isSubsequence('ahmad', 'achmkakuddpppo')  # true
 
 print(bool)

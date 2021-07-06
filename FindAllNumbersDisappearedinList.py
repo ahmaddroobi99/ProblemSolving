@@ -24,8 +24,7 @@
 #
 # Input: nums = [4, 3, 2, 7, 8, 2, 3, 1]
 # Output: [5, 6]
-
-#the idea is traverse in the list mul every element by -1 make it negative then add to list the positive elementin the range of 0-n
+# the idea is traverse in the list mul every element by -1 make it negative then add to list the positive elementin the range of 0-n
 # those are the missing elements ...:)
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:

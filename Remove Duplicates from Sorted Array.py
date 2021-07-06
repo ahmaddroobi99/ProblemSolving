@@ -6,6 +6,3 @@ class Solution:
                 Count = Count + 1
                 nums[Count] = nums[i+1]
         return Count+1
-
-
-

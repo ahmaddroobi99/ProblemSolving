@@ -9,13 +9,13 @@ two = 0
 p = set()
 
 whlie:
-   one < len(nums1) and two < len(nums2):
+    one < len(nums1) and two < len(nums2):
 
-   if nums1[one] == nums2[two]:
-    p.add(nums1[one])
+    if nums1[one] == nums2[two]:
+        p.add(nums1[one])
 
-    one += 1
-    two += 1
+        one += 1
+        two += 1
 elif nums1[one] > nums2[two]:
     two += 1
 else:

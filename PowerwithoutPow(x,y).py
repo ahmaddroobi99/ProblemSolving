@@ -10,5 +10,5 @@ class Solution:
         return i - 1
 
 
-s=Solution()
+s = Solution()
 print(s.mySqrt(1256))

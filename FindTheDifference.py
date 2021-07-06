@@ -6,12 +6,11 @@
 
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        list2=[]
+        list2 = []
         for i in t:
             list2.append(i)
         for i in s:
             list2.remove(i)
         return list2[0]
 
-
-    #solution 2 using hash maps its faster
+    # solution 2 using hash maps its faster

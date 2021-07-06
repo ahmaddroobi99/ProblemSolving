@@ -9,7 +9,7 @@
 # a
 # non - negative
 # number, n.
-#its a bad algorithm but this is the first solution appear in my head :(
+# its a bad algorithm but this is the first solution appear in my head :(
 
 class Solution:
     def countPrimes(self, n: int) -> int:
@@ -27,9 +27,7 @@ class Solution:
         return ctr
 
 
-
-
-s=Solution()
+s = Solution()
 print(s.countPrimes(10))
 print(s.countPrimes(100))
 print(s.countPrimes(1000))

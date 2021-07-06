@@ -10,7 +10,7 @@ def divide(self, dividend: int, divisor: int) -> int:
             res += n
             n += n
             tmp += tmp
-    if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
+    if (dividend < 0 < divisor) or (dividend > 0 > divisor):
         res = -res
 
     if -2 ** 31 <= res <= 2 ** 31 - 1:

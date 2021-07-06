@@ -12,9 +12,7 @@
 # does
 # not exist,
 # return -1.
-
-
-#algo : simple i used a hashed map (dictionary in python ) to find the count of each letter the return the first 1 counted :>)
+# algo : simple i used a hashed map (dictionary in python ) to find the count of each letter the return the first 1 counted :>)
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
@@ -28,6 +26,7 @@ class Solution:
 
         return -1
 
-s= Solution()
-index = s.firstUniqChar("ahmad hamdan droobi") #11 which is n True ::
+
+s = Solution()
+index = s.firstUniqChar('ahmad hamdan droobi')  # 11 which is n True ::
 print(index)

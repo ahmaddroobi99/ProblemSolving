@@ -6,10 +6,10 @@ class Solution:
         # the remainer time by time. When meeting same remainer, there have repeating
         # and the begining of the repeating is the index where you first meet
         # the same remainer
-        res = ""
+        res = ''
         # determinate symbol with xor, remeber 0 have not negative one
         if numerator ^ denominator < 0 and numerator != 0:
-            res += "-"
+            res += '-'
         numerator = abs(numerator)
         denominator = abs(denominator)
         # calculate the integral part
@@ -18,11 +18,12 @@ class Solution:
         remainder = numerator % denominator
         # calculate the decimal part
         if remainder != 0:
-            res += "."
+            res += '.'
         while remainder:
             # detect same remainer, so we can locate the repeating part
             if remainder in remainder_index:
-                res = res[0:remainder_index[remainder]] + '(' + res[remainder_index[remainder]:] + ')'
+                res = res[0:remainder_index[remainder]] + \
+                    '(' + res[remainder_index[remainder]:] + ')'
                 # please notice that the rest calculate is repeating, so break now
                 break
 
@@ -34,22 +35,21 @@ class Solution:
         return res
 
 
-
-s=Solution()
-result= s.fractionToDecimal(3,5)
-
-print(result)
-
-result= s.fractionToDecimal(3,5)
+s = Solution()
+result = s.fractionToDecimal(3, 5)
 
 print(result)
 
-
-result= s.fractionToDecimal(2,7)
+result = s.fractionToDecimal(3, 5)
 
 print(result)
 
 
-result= s.fractionToDecimal(15,9)
+result = s.fractionToDecimal(2, 7)
+
+print(result)
+
+
+result = s.fractionToDecimal(15, 9)
 
 print(result)

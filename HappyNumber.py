@@ -13,7 +13,8 @@ class Solution:
 
         s = set()
         while n != 1:
-            if n in s: return False
+            if n in s:
+                return False
             s.add(n)
 
             _sum = 0
@@ -25,7 +26,7 @@ class Solution:
         return n == 1
 
 
-s=Solution()
+s = Solution()
 print(s.isHappy(2021))
 print(s.isHappy(97))
 print(s.isHappy(44))
@@ -33,4 +34,3 @@ print(s.isHappy(79))
 print(s.isHappy(10))
 print(s.isHappy(7))
 print(s.isHappy(130))
-

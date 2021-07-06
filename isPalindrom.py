@@ -4,7 +4,6 @@ class Solution:
         return c
 
 
-
-s=Solution()
+s = Solution()
 print(s.isPalindrome(123321))
 print(s.isPalindrome(-6205506))
