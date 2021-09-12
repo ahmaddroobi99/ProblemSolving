@@ -1,3 +1,7 @@
+from collections import defaultdict
+from typing import List
+
+
 class Solution:
     def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
         m = len(mat)
