@@ -2,6 +2,9 @@
 # Step 2: compute factors for each number in A
 # Step 3: use union-find to link two primes if they are factors of the same number in A
 # Step 4: for each number in A, add to its union (the union represented by its smallest prime)
+import collections
+from typing import List
+
 
 class Solution:
     def largestComponentSize(self, A: List[int]) -> int:
