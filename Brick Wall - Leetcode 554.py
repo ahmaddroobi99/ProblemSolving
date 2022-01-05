@@ -7,4 +7,4 @@ class Solution:
             for b in r[:-1]:
                 total += b
                 countGaps[total] = 1 + countGaps.get(total, 0)
-        return len(wall) - max(countGaps.values())
+        return len(wall ) - max(countGaps.values())
