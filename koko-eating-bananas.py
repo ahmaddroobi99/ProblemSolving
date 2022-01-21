@@ -12,3 +12,4 @@ class Solution:
                 k = mid
                 high = mid - 1
         return k
+    
