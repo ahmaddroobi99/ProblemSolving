@@ -38,3 +38,4 @@ class Solution:
                 s2 = stack.pop()
             stack.append(i)
         return False
+
