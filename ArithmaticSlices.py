@@ -30,3 +30,20 @@ class Solution:
             if A[i - 2] - A[i - 1] == A[i - 1] - A[i]:
                 dp[i] += dp[i - 1] + 1
         return sum(dp.values())
+# ///After 6 months i solvefed it like thisw
+    class Solution:
+        def numberOfArithmeticSlices(self, nums: List[int]) -> int:
+            N = len(nums)
+            dp = (N - 1) * [None]
+
+            for i in range(1, N):
+                dp[i - 1] = nums[i] - nums[i - 1]
+            m = 1
+            out = 0
+            for i in range(1, N - 1):
+                if dp[i] == dp[i - 1]:
+                    out += m
+                    m += 1
+                else:
+                    m = 1
+            return out
